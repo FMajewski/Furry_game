@@ -1,0 +1,173 @@
+
+* {
+  box-sizing: border-box;
+  font-family: "Oswald", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgreen;
+}
+
+section#welcome {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+section#welcome button{
+  top: 40%;
+}
+
+/*section#welcome .wrapper {*/
+/*  width: 100vw;*/
+/*  height: 1px;*/
+/*  position: relative;*/
+/*  top: 50%;*/
+/*  left: 50%;*/
+/*  transform: translate(-50%, -50%);*/
+
+/*}*/
+
+section#welcome button {
+  width: 25rem;
+  height: 5rem;
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: darkgreen;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid white;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+section#score {
+  width: 100%;
+}
+
+#board {
+  width: 650px;
+  height: 650px;
+  margin: 2em auto;
+
+}
+
+#board > div {
+  border: 2px solid darkgreen;
+  float: left;
+  width: 65px;
+  height: 65px;
+  background-color: white;
+}
+
+
+section#score div {
+  width: 15em;
+  height: 6em;
+  text-align: center;
+  padding: 0.5em;
+  background-color: darkgreen;
+  color: white;
+  border-radius: 1px;
+  margin: 3em auto;
+  border-radius: 10px;
+}
+strong{
+  font-size: 40px;
+}
+
+.furry {
+  background-image: url('../images/furry.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.coin {
+  position: relative;
+}
+
+.coin::after {
+  content: "$";
+  color: white;
+  font-size: 28px;
+  font-weight: 900;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.coin::before {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #FCB82F;
+  display: block;
+  content: "";
+  box-shadow: 0 0 0 5px #FFE37F;
+}
+
+
+
+
+
+section#over {
+  position: fixed;
+  width: 640px;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 20px;
+  background-color: darkgreen;
+  border-radius: 15px;
+
+
+}
+
+section#over div {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bolder;
+  color: white;
+  font-size: 32px;
+}
+
+
+section#over button {
+  border: 2px solid darkgreen;
+  width: 50%;
+  margin-left: 25%;
+  background-color: #FF4057;
+  color: white;
+  font-size: 22px;
+  margin-bottom: 20px;
+  transition: 0.2s;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+section#over button:hover{
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
+
+.invisible {
+  display: none;
+}
